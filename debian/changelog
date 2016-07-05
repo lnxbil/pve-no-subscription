@@ -2,8 +2,9 @@ pve-no-subscription (1.1) UNRELEASED; urgency=low
 
   * Added patch for ext4 and ext6 version of pvemanager
   * Drop dependency on pve-manager
+  * adding specifiy architecture flag to apt repository
 
- -- Andreas Steinel <A.Steinel@gmail.com>  Mon, 25 Apr 2016 10:59:14 +0200
+ -- Andreas Steinel <A.Steinel@gmail.com>  Tue, 05 Jul 2016 13:53:33 +0200
 
 pve-no-subscription (1.0) UNRELEASED; urgency=low
 
