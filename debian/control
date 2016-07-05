@@ -10,7 +10,7 @@ Vcs-Browser: https://github.com/lnxbil/pve-no-subscription
 
 Package: pve-no-subscription
 Architecture: all
-Depends: ${misc:Depends}, patch, pve-manager (>= 4.0)
+Depends: ${misc:Depends}, patch
 Description: PVE non-subscription repository and tweaks
  Debian APT repository for pve-no-subscription and subscription
  notification remover as simple debian package.

@@ -1,0 +1,12 @@
+--- /usr/share/pve-manager/ext6/pvemanagerlib.js.orig        2016-04-25 10:47:04.345151970 +0200
++++ /usr/share/pve-manager/ext6/pvemanagerlib.js       2016-04-25 10:46:35.821675213 +0200
+@@ -507,7 +507,7 @@
+            success: function(response, opts) {
+                var data = response.result.data;
+ 
++               if (false) {
+-               if (data.status !== 'Active') {
+                    Ext.Msg.show({
+                        title: gettext('No valid subscription'),
+                        icon: Ext.Msg.WARNING,
+
