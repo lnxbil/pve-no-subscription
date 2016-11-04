@@ -1,5 +1,14 @@
 --- /usr/share/pve-manager/ext6/pvemanagerlib.js.orig        2016-04-25 10:47:04.345151970 +0200
 +++ /usr/share/pve-manager/ext6/pvemanagerlib.js       2016-04-25 10:46:35.821675213 +0200
+@@ -275,7 +275,7 @@
+        'p': gettext('Premium')
+     },
+
+-    noSubKeyHtml: 'You do not have a valid subscription for this server. Please visit <a target="_blank" href="http://www.proxmox.com/products/proxmox-ve/subscription-service-plans">www.proxmox.com</a> to get a list of available options.',
++    noSubKeyHtml: 'This server is receiving updates from the Proxmox VE No-Subscription Repository. Please visit <a target="_blank" href="http://www.proxmox.com/products/proxmox-ve/subscription-service-plans">www.proxmox.com</a> to get a list of available options.',
+
+     kvm_ostypes: {
+        other: gettext('Other OS types'),
 @@ -507,7 +507,7 @@
             success: function(response, opts) {
                 var data = response.result.data;
@@ -9,4 +18,12 @@
                     Ext.Msg.show({
                         title: gettext('No valid subscription'),
                         icon: Ext.Msg.WARNING,
+@@ -32662,7 +32662,7 @@
+     alias: 'widget.pveDcSupport',
+     pveGuidePath: '/pve-docs/index.html',
+
+-    invalidHtml: '<h1>No valid subscription</h1>' + PVE.Utils.noSubKeyHtml,
++    invalidHtml: '<h1>Community Edition</h1>' + PVE.Utils.noSubKeyHtml,
+
+     communityHtml: 'Please use the public community <a target="_blank" href="http://forum.proxmox.com">forum</a> for any questions.',
 
