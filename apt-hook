@@ -1,1 +1,2 @@
-DPkg::Post-Invoke {"/usr/share/pve-no-subscription/no-subscription-warning.sh";};
+# file provided by pve-no-subscription
+DPkg::Post-Invoke {"/usr/bin/test -e /usr/share/pve-no-subscription/no-subscription-warning.sh && /usr/share/pve-no-subscription/no-subscription-warning.sh";};
