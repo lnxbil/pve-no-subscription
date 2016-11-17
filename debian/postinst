@@ -5,6 +5,11 @@ set -e
 case "$1" in
     postinst|configure)
         /usr/share/pve-no-subscription/no-subscription-warning.sh
+        if [ -e /usr/share/pve-no-subscription/proxmox_ve.asc ]
+        then
+            echo -n "Adding Proxmox VE apt key: "
+            apt-key add /usr/share/pve-no-subscription/proxmox_ve.asc
+        fi
         ;;
 
     *)
