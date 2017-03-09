@@ -11,6 +11,7 @@ install:
 	@install -m 755 no-subscription-warning.sh $(DESTDIR)/usr/share/pve-no-subscription
 	@install -m 644 no-subscription-warning-ext4.patch $(DESTDIR)/usr/share/pve-no-subscription
 	@install -m 644 no-subscription-warning-ext6.patch $(DESTDIR)/usr/share/pve-no-subscription
+	@install -m 644 no-subscription-warning-js.patch $(DESTDIR)/usr/share/pve-no-subscription
 	@install -m 644 pve-no-subscription.list $(DESTDIR)/etc/apt/sources.list.d
 	@install -m 644 pve-no-subscription.asc $(DESTDIR)/usr/share/pve-no-subscription/proxmox_ve.asc
 
