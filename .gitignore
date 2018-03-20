@@ -3,4 +3,6 @@ debian/files
 debian/pve-no-subscription.debhelper.log
 debian/pve-no-subscription.substvars
 debian/pve-no-subscription/
+debian/debhelper-build-stamp
+*.deb
 

@@ -1,3 +1,10 @@
+pve-no-subscription (1.5) UNRELEASED; urgency=low
+
+  * Porting APT sources file to Stretch
+  * Adding patch for new structure found in PVE 5
+
+ -- Andreas Steinel <A.Steinel@gmail.com>  Tue, 20 Mar 2018 21:18:53 +0100
+
 pve-no-subscription (1.4) UNRELEASED; urgency=low
 
   * Adding patch for new file in js

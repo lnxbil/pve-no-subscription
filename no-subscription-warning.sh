@@ -32,7 +32,15 @@ case "$TYPE" in
         	cd / && patch --no-backup-if-mismatch -l -p0 < /usr/share/pve-no-subscription/no-subscription-warning-js.patch
         	echo "------------------------------------------------------------------------------"
         fi
+
+        if [ $( grep -c "if (data.status !== 'Active') {" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js ) -gt 0 ]
+        then
+        	echo "---------------[ Patching with No-Subscription-Removal-Patch ]----------------"
+        	cd / && patch --no-backup-if-mismatch -l -p0 < /usr/share/pve-no-subscription/no-subscription-warning-js2.patch
+        	echo "------------------------------------------------------------------------------"
+        fi
         ;;
+
     *)
         echo "Unknown Type! Sourcefile not found!"
         ;;

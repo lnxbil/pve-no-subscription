@@ -1,10 +1,10 @@
 Source: pve-no-subscription
 Section: admin
 Priority: optional
-Build-Depends: debhelper (>= 7)
+Build-Depends: debhelper (>= 9)
 Build-Depends-Indep: make (>= 3.81)
 Maintainer: Andreas Steinel <A.Steinel@gmail.com>
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Vcs-Git: https://github.com/lnxbil/pve-no-subscription.git
 Vcs-Browser: https://github.com/lnxbil/pve-no-subscription
 
