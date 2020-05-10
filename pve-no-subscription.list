@@ -1,2 +1,2 @@
-deb [arch=amd64] http://download.proxmox.com/debian stretch pve-no-subscription
+deb [arch=amd64] http://download.proxmox.com/debian buster pve-no-subscription
 
