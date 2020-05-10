@@ -32,5 +32,5 @@ package: package-clean
 
 docker-package:
 	@docker build -t pve-no-subscription .
-	@docker run -t --rm --user 1000 --volume $(PWD):/tmp/workdir --workdir /tmp/workdir pve-no-subscription make package
+	@docker run -t --rm --user $(shell id -u) --volume $(PWD):/tmp/workdir --workdir /tmp/workdir pve-no-subscription make package
 
