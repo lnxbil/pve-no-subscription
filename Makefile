@@ -10,7 +10,7 @@ install:
 	@mkdir -p $(DESTDIR)/usr/share/pve-no-subscription
 	@install -m 644 apt-hook $(DESTDIR)/etc/apt/apt.conf.d/99-pve-no-subscription
 	@install -m 755 no-subscription-warning.sh $(DESTDIR)/usr/share/pve-no-subscription
-	@install -m 644 no-subscription-warning-*.patch $(DESTDIR)/usr/share/pve-no-subscription
+	@install -m 644 *.patch $(DESTDIR)/usr/share/pve-no-subscription
 	@install -m 644 pve-no-subscription.list $(DESTDIR)/etc/apt/sources.list.d
 
 package-clean:

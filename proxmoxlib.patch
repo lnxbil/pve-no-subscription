@@ -1,0 +1,11 @@
+--- /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js.orig	2020-05-10 09:43:14.824887009 +0200
++++ /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js	2020-05-10 09:43:23.688854213 +0200
+@@ -390,7 +390,7 @@
+ 	    success: function(response, opts) {
+ 		var data = response.result.data;
+ 
+-		if (data.status !== 'Active') {
++		if ( false ) {
+ 		    Ext.Msg.show({
+ 			title: gettext('No valid subscription'),
+ 			icon: Ext.Msg.WARNING,
