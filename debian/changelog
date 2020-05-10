@@ -1,3 +1,9 @@
+pve-no-subscription (1.6) stable; urgency=low
+
+  * New version of PVE 6
+
+ -- Andreas Steinel <A.Steinel@gmail.com>  Sun, 10 May 2020 09:56:13 +0200
+
 pve-no-subscription (1.5) UNRELEASED; urgency=low
 
   * Porting APT sources file to Stretch
