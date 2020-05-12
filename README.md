@@ -13,7 +13,7 @@ Navigate to the [releases](https://github.com/lnxbil/pve-no-subscription/release
 On your Proxmox VE server, download and then install the package, e.g.
 
 ```
-wget https://github.com/lnxbil/pve-no-subscription/releases/download/1.6/pve-no-subscription_1.6_all.deb
+wget https://github.com/lnxbil/pve-no-subscription/releases/download/v1.6/pve-no-subscription_1.6_all.deb
 dpkg -i pve-no-subscription_1.6_all.deb
 ```
 
